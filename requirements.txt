@@ -1,0 +1,26 @@
+# Python packages for wrong_way_detector.ipynb
+# Install with: pip install -r requirements.txt
+# On Google Colab most of these are preinstalled; the notebook's first cell installs the rest.
+# The video re-encoding step also needs ffmpeg on the system path (preinstalled on Colab).
+
+# Detection and tracking (YOLO26 support starts at ultralytics 8.4.0)
+ultralytics>=8.4.0
+lap>=0.5.12
+torch>=1.8.0
+
+# Video, data and plotting
+opencv-python>=4.6.0
+numpy>=1.23.0
+pandas>=1.5.0
+matplotlib>=3.5.0
+jinja2>=3.0.0
+tqdm>=4.64.0
+
+# Running the notebook locally
+ipython>=8.0.0
+notebook>=7.0.0
+
+# Optional: only needed when VIDEO_SOURCE = "url" points to a YouTube link
+# (the notebook installs these itself when required)
+# yt-dlp[default]
+# deno
